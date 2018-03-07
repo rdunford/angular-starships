@@ -1,0 +1,11 @@
+<h1>Star Wars Ships</h1>
+
+<div ng-repeat="ship in ships">
+    <a ui-sref="ship(ship)"><h3>{{ship.name}} {{ship.id}}</h3></a>
+    <div>
+        <h3>Model: {{ship.model}}</h3>
+        <h3>Cost: {{ship.cost_in_credits | currency}}</h3>
+        <h3>Hyperdrive Rating: {{ship.hyperdrive_rating}}</h3>
+    </div>
+    <br/>
+</div>
